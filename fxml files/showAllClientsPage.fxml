@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="332.0" prefWidth="639.0" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TableView fx:id="clientsTableView" layoutX="100.0" layoutY="88.0" prefHeight="200.0" prefWidth="438.0">
+        <columns>
+          <TableColumn fx:id="clientIDColumn" prefWidth="75.0" text="Client ID" />
+            <TableColumn fx:id="nameColumn" prefWidth="91.20001220703125" text="Name" />
+          <TableColumn fx:id="emailColumn" prefWidth="156.800048828125" text="Email" />
+            <TableColumn fx:id="passwordColumn" prefWidth="112.79996337890623" text="Password" />
+        </columns>
+      </TableView>
+      <Label layoutX="86.0" layoutY="30.0" text="These are all the clients that are registered">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

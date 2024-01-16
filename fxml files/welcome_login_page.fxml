@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="472.0" prefWidth="600.0" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.flight_system_ticket.HelloController">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="248.0" layoutY="14.0" prefHeight="19.0" prefWidth="100.0" text="Welcome" textAlignment="CENTER">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+      <Label layoutX="214.0" layoutY="47.0" text="Select the type of user">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+      <RadioButton fx:id="client_radio" layoutX="302.0" layoutY="74.0" mnemonicParsing="false" text="CLIENT" textFill="WHITE">
+         <toggleGroup>
+            <ToggleGroup fx:id="users" />
+         </toggleGroup></RadioButton>
+      <RadioButton fx:id="admin_radio" layoutX="226.0" layoutY="74.0" mnemonicParsing="false" text="ADMIN" textFill="#fffdfd" toggleGroup="$users" />
+      <Label alignment="CENTER" layoutX="249.0" layoutY="110.0" prefHeight="18.0" prefWidth="106.0" text="Enter your e-mail" textAlignment="CENTER" />
+      <TextField fx:id="emailField" alignment="CENTER" layoutX="227.0" layoutY="128.0" />
+      <Label layoutX="248.0" layoutY="154.0" text="Enter your password" />
+      <Button layoutX="242.0" layoutY="210.0" mnemonicParsing="false" onAction="#submitCredentials" text="Submit Credentials" />
+      <PasswordField fx:id="passwordField" layoutX="227.0" layoutY="172.0" />
+      <Label layoutX="214.0" layoutY="340.0" text="You don't have an account yet ?! " />
+      <Button fx:id="signUpButton" layoutX="249.0" layoutY="358.0" mnemonicParsing="false" onAction="#switch_to_create_an_account_page" text="Sign Up For Free" />
+      <Label fx:id="account_exists_or_not" alignment="CENTER" contentDisplay="CENTER" layoutX="175.0" layoutY="307.0" prefHeight="18.0" prefWidth="249.0" textAlignment="CENTER" />
+      <Label fx:id="userTypeLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="185.0" layoutY="267.0" prefHeight="18.0" prefWidth="234.0" textAlignment="CENTER" />
+   </children>
+</AnchorPane>

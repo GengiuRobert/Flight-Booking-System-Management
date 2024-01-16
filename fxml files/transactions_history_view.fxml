@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="665.0" prefWidth="797.0" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TableView fx:id="transactionHistoryTableView" layoutX="35.0" layoutY="72.0" prefHeight="274.0" prefWidth="728.0">
+        <columns>
+          <TableColumn fx:id="ticketIDTransactionColumn" prefWidth="75.0" text="Ticket ID" />
+          <TableColumn fx:id="priceTransactionColumn" prefWidth="75.0" text="Price" />
+            <TableColumn fx:id="typeTransactionColumn" prefWidth="75.0" text="Type" />
+            <TableColumn fx:id="arrivalTransactionCityColumn" prefWidth="76.80001831054688" text="Leave Date" />
+            <TableColumn fx:id="arrivalDateTransactionColumn" prefWidth="82.39996337890625" text="Arrival Date" />
+            <TableColumn fx:id="leaveCityTransactionColumn" prefWidth="89.5999755859375" text="Leave City" />
+            <TableColumn fx:id="leaveDateTransactionColumn" prefWidth="99.20001220703125" text="Arrival City" />
+            <TableColumn fx:id="leaveTimeTransactionColumn" prefWidth="73.5999755859375" text="Leave Time" />
+            <TableColumn fx:id="arrivalTransactionTimeColumn" text="Arrival Time" />
+        </columns>
+      </TableView>
+      <Label layoutX="229.0" layoutY="14.0" text="Transaction History">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Label>
+      <TableView fx:id="ReviewTableView" layoutX="35.0" layoutY="391.0" prefHeight="260.0" prefWidth="728.0">
+        <columns>
+          <TableColumn fx:id="ticketIDReviewColumn" prefWidth="75.0" text="TicketID" />
+          <TableColumn fx:id="ratingReviewColumn" prefWidth="52.800010681152344" text="Rating" />
+            <TableColumn fx:id="reviewColumn" prefWidth="603.1999816894531" text="Review" />
+        </columns>
+      </TableView>
+      <Label layoutX="45.0" layoutY="346.0" text="If the rating is 0.0, that means no rating was given yet">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="659.0" prefWidth="1360.0" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TableView fx:id="airlineTableView" layoutX="30.0" layoutY="31.0" prefHeight="200.0" prefWidth="338.0">
+        <columns>
+          <TableColumn fx:id="idAirlineTableColumn" prefWidth="36.799957275390625" text="ID" />
+          <TableColumn fx:id="nameAirlineTableColumn" prefWidth="208.00007247924805" text="Name" />
+            <TableColumn fx:id="codeOfNameAirlineTableColumn" minWidth="4.79998779296875" prefWidth="93.60001220703123" text="Code Of Name" />
+        </columns>
+      </TableView>
+      <Label layoutX="135.0" text="Airlines Details">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TableView fx:id="airportTableView" layoutX="421.0" layoutY="31.0" prefHeight="200.0" prefWidth="368.0">
+        <columns>
+          <TableColumn fx:id="airportIdTableColumn" prefWidth="38.4000244140625" text="ID" />
+          <TableColumn fx:id="airportLeaveTableColumn" prefWidth="180.79998779296875" text="Leaving Airport" />
+            <TableColumn fx:id="airportArrivalTableColumn" prefWidth="148.0" text="Arrival Airport" />
+        </columns>
+      </TableView>
+      <TableView fx:id="planeTableView" layoutX="837.0" layoutY="31.0" prefHeight="200.0" prefWidth="502.0">
+        <columns>
+          <TableColumn fx:id="planeIdTableColumn" prefWidth="40.0" text="ID" />
+          <TableColumn fx:id="planeNameTableColumn" prefWidth="88.0" text="Plane Name" />
+            <TableColumn fx:id="planeTotalSeatsTableColumn" prefWidth="70.39996337890625" text="Total Seats" />
+            <TableColumn fx:id="planeAvailableSeatsTableColumn" prefWidth="90.4000244140625" text="Available Seats" />
+            <TableColumn fx:id="planeSecondClassTableColumn" prefWidth="112.79997558593749" text="Second Class Seats" />
+            <TableColumn fx:id="planeFirstClassTableColumn" prefWidth="98.4000244140625" text="First Class Seats" />
+        </columns>
+      </TableView>
+      <Label layoutX="537.0" text="Airports Details">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="1027.0" text="Planes Details">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TableView fx:id="dateTableView" layoutX="79.0" layoutY="278.0" prefHeight="200.0" prefWidth="240.0">
+        <columns>
+          <TableColumn fx:id="dateIdTableColumn" prefWidth="35.999996185302734" text="ID" />
+          <TableColumn fx:id="dateLeavingTableColumn" prefWidth="114.39999389648438" text="Leaving Date" />
+            <TableColumn fx:id="dateArrivalTableColumn" prefWidth="88.80000305175781" text="Arrival Date" />
+        </columns>
+      </TableView>
+      <TableView fx:id="cityTableView" layoutX="421.0" layoutY="278.0" prefHeight="200.0" prefWidth="240.0">
+        <columns>
+          <TableColumn fx:id="cityIdTableColumn" prefWidth="34.4000244140625" text="ID" />
+          <TableColumn fx:id="cityLeavingTableColumn" prefWidth="107.199951171875" text="Leaving City" />
+            <TableColumn fx:id="cityArrivalTableColumn" prefWidth="98.40008544921875" text="Arrival City" />
+        </columns>
+      </TableView>
+      <TableView fx:id="priceTableView" layoutX="763.0" layoutY="278.0" prefHeight="200.0" prefWidth="240.0">
+        <columns>
+          <TableColumn fx:id="priceIdTableColumn" prefWidth="34.4000244140625" text="ID" />
+          <TableColumn fx:id="priceFirstTableColumn" prefWidth="92.00006103515625" text="First Class Price" />
+            <TableColumn fx:id="priceSecondTableColumn" prefWidth="108.800048828125" text="Second Class Price" />
+        </columns>
+      </TableView>
+      <TableView fx:id="timeTableView" layoutX="1087.0" layoutY="290.0" prefHeight="200.0" prefWidth="207.0">
+        <columns>
+          <TableColumn fx:id="timeIdTableColumn" prefWidth="34.39990234375" text="ID" />
+          <TableColumn fx:id="timeLeaveTableColumn" prefWidth="93.5999755859375" text="Leave Time" />
+            <TableColumn fx:id="timeArrivalTableColumn" prefWidth="78.39995117187499" text="Arrival Time" />
+        </columns>
+      </TableView>
+      <Label layoutX="141.0" layoutY="247.0" text="Dates Details">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="481.0" layoutY="247.0" text="Citites Details">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="825.0" layoutY="247.0" text="Prices Details">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="1132.0" layoutY="247.0" text="Hours Details">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="airlineCodeTextField" layoutX="106.0" layoutY="508.0" />
+      <TextField fx:id="planeNameTextField" layoutX="106.0" layoutY="562.0" />
+      <TextField fx:id="cityLeaveTextField" layoutX="308.0" layoutY="508.0" />
+      <TextField fx:id="cityArriveTextField" layoutX="308.0" layoutY="562.0" />
+      <TextField fx:id="dateLeaveTextField" layoutX="511.0" layoutY="508.0" />
+      <TextField fx:id="dateArriveTextField" layoutX="511.0" layoutY="562.0" />
+      <TextField fx:id="priceFirstTextField" layoutX="726.0" layoutY="508.0" />
+      <TextField fx:id="priceSecondTextField" layoutX="726.0" layoutY="562.0" />
+      <TextField fx:id="timeLeaveTextField" layoutX="922.0" layoutY="508.0" />
+      <TextField fx:id="timeArriveTextField" layoutX="922.0" layoutY="562.0" />
+      <TextField fx:id="airportLeaveTextField" layoutX="1117.0" layoutY="508.0" />
+      <TextField fx:id="airportArriveTextField" layoutX="1117.0" layoutY="562.0" />
+      <Label layoutX="123.0" layoutY="490.0" text="Airline Code Of Name" />
+      <Label layoutX="149.0" layoutY="544.0" text="Plane Name" />
+      <Label layoutX="350.0" layoutY="490.0" text="Leaving City" />
+      <Label layoutX="354.0" layoutY="544.0" text="Arrival City" />
+      <Label layoutX="551.0" layoutY="490.0" text="Leaving Date" />
+      <Label layoutX="554.0" layoutY="544.0" text="Arrival Date" />
+      <Label layoutX="747.0" layoutY="490.0" text="First Class Seat Price" />
+      <Label layoutX="738.0" layoutY="544.0" text="Second Class Seat Price" />
+      <Label layoutX="961.0" layoutY="490.0" text="Leaving Time" />
+      <Label layoutX="964.0" layoutY="544.0" text="Arrival Time" />
+      <Label layoutX="1151.0" layoutY="490.0" text="Leaving Airport" />
+      <Label layoutX="1154.0" layoutY="544.0" text="Arrival Airport" />
+      <Button layoutX="639.0" layoutY="594.0" mnemonicParsing="false" onAction="#createNewTicket" text="Create Ticket">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Label fx:id="createTicketLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="566.0" layoutY="635.0" prefHeight="18.0" prefWidth="253.0" textAlignment="CENTER" />
+   </children>
+</AnchorPane>
